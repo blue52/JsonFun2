@@ -9,16 +9,39 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var dataArray = [AnyObject]()
+    
+    
+    @IBOutlet weak var showLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
+        let url = URL(string: "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=f4a75ba9-7721-4363-884d-c3820b0b917c")
+        let urlResquest = URLRequest(url: url!, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 30)
+        let task = URLSession.shared.dataTask(with: urlResquest) { (data:Data?, response: URLResponse?, err: Error?) in
+            guard err == nil else{
+                return
+            }
+            if let data = data{
+                do {
+                    let dic = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! [String:AnyObject]
+                    let array = dic["result"]!["results"] as! [[String:AnyObject]]
+                    print(array)
+                    self.showLabel.text = dic["HairType"] as? String
+                    //print("\(dic["results"]!["results"]["HairType"])")
+                }
+                catch{
+                
+                }
+            }
+        }
+        
+        task.resume()
+        
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }

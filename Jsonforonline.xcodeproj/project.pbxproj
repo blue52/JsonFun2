@@ -13,6 +13,7 @@
 		016DC3CE1E88F63E0020732E /* Jsonforonline.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 016DC3CC1E88F63E0020732E /* Jsonforonline.xcdatamodeld */; };
 		016DC3D01E88F63E0020732E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016DC3CF1E88F63E0020732E /* Assets.xcassets */; };
 		016DC3D31E88F63E0020732E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016DC3D11E88F63E0020732E /* LaunchScreen.storyboard */; };
+		016DC3FB1E8B4A510020732E /* ShowInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016DC3FA1E8B4A510020732E /* ShowInformationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		016DC3CF1E88F63E0020732E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		016DC3D21E88F63E0020732E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		016DC3D41E88F63E0020732E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		016DC3FA1E8B4A510020732E /* ShowInformationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowInformationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				016DC3C51E88F63E0020732E /* AppDelegate.swift */,
 				016DC3C71E88F63E0020732E /* ViewController.swift */,
+				016DC3FA1E8B4A510020732E /* ShowInformationTableViewController.swift */,
 				016DC3C91E88F63E0020732E /* Main.storyboard */,
 				016DC3CF1E88F63E0020732E /* Assets.xcassets */,
 				016DC3D11E88F63E0020732E /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				016DC3CE1E88F63E0020732E /* Jsonforonline.xcdatamodeld in Sources */,
+				016DC3FB1E8B4A510020732E /* ShowInformationTableViewController.swift in Sources */,
 				016DC3C81E88F63E0020732E /* ViewController.swift in Sources */,
 				016DC3C61E88F63E0020732E /* AppDelegate.swift in Sources */,
 			);
